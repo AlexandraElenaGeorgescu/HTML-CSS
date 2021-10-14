@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link type="text/css" rel="stylesheet" href="CSS.css">
+<h1> MY FIRST PAGE </h1><br>
+<div> <h3>Family name: </h3><input type="text" name="familyname"> </div> 
+<div><h3> Name: </h3><input type="text" name="name"> </div>
+<div><h3> Age: </h3>
+	<select name="agerange">
+                                <option value="5-"> 5-</option>
+            			<option value="5-10"> 5-10</option>
+            			<option value="10-18"> 10-18</option>
+            			<option value="18-25"> 18-25</option>
+            			<option value="25-35"> 25-35</option>
+            			<option value="35-45"> 35-45</option>
+            			<option value="45+"> 45+</option>
+            		</select> </div> 
+ <div><h3> City: </h3>
+	<select name="city">
+            			<option value="Brasov"> Brasov</option>
+            			<option value="Bucuresti"> Bucuresti</option>
+            			<option value="Cluj">Cluj</option>
+            			<option value="Iasi"> Iasi</option>
+            			<option value="Sibiu"> Sibiu</option>
+            			<option value="Valcea"> Valcea</option>
+            		</select> </div>
+
+<div> <h3>Describe yourself: </h3><input type="text" name="describe" class="desc"> </div><br><br>
+
+<input type="submit" value="Cancel" class="cancelbtn" />  <input type="submit" value="Submit" class="submitbtn" />
+  <?php
+  
+            $f=$_POST['familyname'];
+            $n=$_POST['name'];
+            $a=$_POST['agerange'];
+            $c=$_POST['city'];
+            $d=$_POST['describe'];
+            
+  ?>
+</body>
+</html>
